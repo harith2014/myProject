@@ -7,7 +7,12 @@ function pageReady()
 {
 	document.addEventListener("deviceready",initPage,false);
 }
+function ready(){
 
+ navigator.notification.alert;
+
+
+}
 function initPage()
 {
 	document.getElementById("status").innerHTML = "Page ready";
@@ -47,7 +52,7 @@ function showAlert() {
 <center>
 <h1 id="status"></h1>
 <br/>
-<table><tr><td><img id="pix" height="200" src="" />></td>
+<table><tr><td><img id="pix" height="200" src="" /></td>
 <td></td></tr></table>
 </br>
 <input type="button" onclick="startCam()" value="Take Photo" />
@@ -58,10 +63,10 @@ function showAlert() {
 <div id="borang">
 
 
-<table > 
+<table> 
 <form action="#">
-<tr><td>First name: </td><td><input type="text" name="name" required="required"></tr>
-<tr><td>Email: </td><td><input type="text" name="email" onkeyup="myFunction()></td></tr>
+<tr><td>First name: </td><td><input type="text" name="name" required="required" /></td></tr>
+<tr><td>Email: </td><td><input type="text" name="email" onkeyup="myFunction()" /></td></tr>
 </table>
 
   
