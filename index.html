@@ -27,10 +27,43 @@ function errorPic()
 {
 }
 </script>
+
+<style>
+
+#dp{
+
+height:100px;
+width:100px;
+border:2pt;
+background:yellow;
+}
+</style>
 </head>
 <body onload="pageReady()">
 <h1 id="status"></h1>
-<input type="button" onclick="startCam()" value="Start Cam" /><br/>
-<img id="pix" height="300" src="" />
+<br/>
+
+<div id="dp"><img id="pix" height="300" src="" /></div></br>
+<input type="button" onclick="startCam()" value="Take Photo" />
+<input type="button"  value="Upload from album" />
+
+
+
+<div id="borang">
+
+
+<table border="1"> 
+<form action="#">
+<tr><td>First name: </td><td><input type="text" name="name" required="required"></tr>
+<tr><td>Email: </td><td><input type="text" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></td></tr>
+</table>
+
+  
+  
+  <input type="submit" value="Submit" >
+  
+  </form>
+  
+ </div> 
 </body>
 </html>
