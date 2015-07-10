@@ -26,6 +26,15 @@ function displayPic(imageURL)
 function errorPic()
 {
 }
+
+function showAlert() {
+        navigator.notification.alert(
+            'You are the winner!',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+    }
 </script>
 
 <style>
@@ -44,7 +53,7 @@ background:grey;
 <center>
 <h1 id="status"></h1>
 <br/>
-<table><tr><td><div id="dp"><img id="pix" height="300" src="" /></div></td>
+<table><tr><td><div id="dp"><img id="pix" height="200" src="" /></div></td>
 <td></td></tr></table>
 </br>
 <input type="button" onclick="startCam()" value="Take Photo" />
@@ -58,7 +67,7 @@ background:grey;
 <table > 
 <form action="#">
 <tr><td>First name: </td><td><input type="text" name="name" required="required"></tr>
-<tr><td>Email: </td><td><input type="text" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></td></tr>
+<tr><td>Email: </td><td><input type="text" name="email" onkeyup="myFunction()></td></tr>
 </table>
 
   
